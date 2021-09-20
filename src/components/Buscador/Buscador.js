@@ -35,6 +35,16 @@ export default function Buscador() {
 
   };
 
+  const handleOnKeyDown = (e) => {
+    if (e.key === 'Enter') {
+
+      e.preventDefault();
+      setTitle('');
+      dispatch(getMovies(title));
+      
+    }
+  }
+
 
 
 
@@ -48,7 +58,7 @@ export default function Buscador() {
           autoComplete='off'
           value={title}
           onChange={handleOnChange}
-          /* onKeyDown={handleOnKeyDown} */
+          onKeyDown={handleOnKeyDown}
           className='input'
         />
         <button type='submit' onClick={handleOnSubmit} className='submit' ><IoSearch /></button>
@@ -58,7 +68,7 @@ export default function Buscador() {
           movies && movies.map(movie => (
             <div className= 'containerBuscador'>
                 <Link to={`/movie/${movie.imdbID}`}  className='linkBuscador'>
-                  <h2 className='nameBuscador'>{movie.Title}</h2>
+                  <h2 className='nameBuscador'>{movie.Title.length < 10 ? movie.Title: movie.Title.slice(0,10)+'...'}</h2>
                   <img src={movie.Poster} alt="not found" className='posterBuscador' />
                 </Link>
             </div>

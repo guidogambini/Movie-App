@@ -1,0 +1,30 @@
+.favs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+.fav {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+}
+
+.button {
+    width: 30px;
+    background-color: #be1414;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+.nombre {
+    font-size: 20px;
+    font-stretch: expanded;
+    color: white;
+    background-color: black;
+}

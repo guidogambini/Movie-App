@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+.cnt {
+    padding-top: 10px;
+}
+
+.label {
+    padding-right: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: #be1414;
+    font-family: 'Merriweather', serif;
+}
+
+.pelis {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.peli {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+
+    height: 237px;
+
+
+
+    backdrop-filter: blur(0.8px);
+}
+
+.subPeli {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.input {
+    background-color: rgba(56, 50, 50, 0.774);
+    border: none;
+    font-weight: 600;
+    width: 20rem;
+    height: 2.5rem;
+    color: white;
+}
+
+.submit {
+    background-color: rgba(56, 50, 50, 0.774);
+    border: none;
+    cursor: pointer; 
+    font-weight: 600;
+    width: 5rem;
+    height: 2.5rem;
+    color: white;
+    margin-left: 0.5em;
+}
+
+.input:hover, .submit:hover {
+    background-color: rgba(255, 255, 255, 0.486);
+    color: black;
+    transition: 0.25s;
+}
+
+.searcher {
+    display: flex;
+    margin-left: 28em;
+    margin-top: 1em;
+}
+
+.containerBuscador {
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: stretch;
+    
+    width: 200px;
+
+    height: 270px;
+
+    background-color: rgb(0, 0, 0);
+
+    margin-left: 40px;
+
+    margin-right: 40px;
+
+    margin-top: 30px;
+    border-radius: 1em;
+
+    backdrop-filter: blur(0.8px);
+}
+
+.linkBuscador {
+    text-decoration: none;
+}
+
+.posterBuscador {
+    display: flex;
+    justify-content: center;
+    width:  200px;
+    height: 203px;
+    object-fit: cover;
+    margin-top: -4.3em; 
+    height: 273px;
+    
+}
+
+.posterBuscador:hover + .nameBuscador {
+    display: none;
+}
+
+.posterBuscador:hover {
+    height: 203px;
+    margin-top: 0; 
+}
+
+
+.nameBuscador {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    color: #be1414;
+    border: solid 2px white;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+    border-radius: 1em;
+}
+
+.addFav {
+    position: absolute;
+    margin-right: -10em;
+}
+
+.peliBuscador {
+    display: flex;
+    flex-direction: column;
+
+}

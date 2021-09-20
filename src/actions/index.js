@@ -9,7 +9,7 @@ export function addMovieFavorite(payload) {
 export function getMovieDetail(id) {
   return async function (dispatch) {
     try {
-      const movie = await axios.get(`http://www.omdbapi.com/?i=${id}&apikey=e0f0a1eb`);
+      const movie = await axios.get(`https://www.omdbapi.com/?i=${id}&apikey=e0f0a1eb`);
       return dispatch({
         type: "GET_MOVIE_DETAIL",
         payload: movie.data
@@ -28,7 +28,7 @@ export function removeMovieFavorite(id) {
 export function getMovies(title) {
   return async function (dispatch) {
     try {
-      const movie = await axios.get(`http://www.omdbapi.com/?t=${title}&apikey=e0f0a1eb`);
+      const movie = await axios.get(`https://www.omdbapi.com/?t=${title}&apikey=e0f0a1eb`);
       console.log(movie.data)
       return dispatch({
         type: 'GET_MOVIES',
